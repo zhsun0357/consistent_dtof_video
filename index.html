@@ -1,0 +1,288 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>DVSR_HVSR</title>
+  <meta name="author" content="Zhanghao Sun">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYPB37537S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YYPB37537S');
+  </script>
+
+
+  <link rel="icon" type="image/png" href="data/Rice_logo.png">    
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+
+
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+		  <h1 class="title is-3 publication-title">Consistent Direct Time-of-Flight Video Depth Super-Resolution</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zhsun0357.github.io">Zhanghao Sun</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://ywwwer.github.io/">Wei Ye</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://jhxiong.github.io/">Jinhui Xiong</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.chrisgchoe.com/">Gyeongmin "Chris" Choe</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/jialiangwang/home">Jialiang Wang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://shuochsu.github.io/">Shuochen Su</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://openreview.net/profile?id=~Rakesh_Ranjan2">Rakesh Ranjan</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Stanford University,</span>
+            <span class="author-block"><sup>2</sup>Meta Reality Labs</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2211.08658"
+                   class="external-link button is-normal is-gray">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-soulcity">
+          <video poster="" id="soulcity" autoplay controls muted loop height="100%">
+            <source src="data/soulcity_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-table">
+          <video poster="" id="table" autoplay controls muted loop height="100%">
+            <source src="data/desk_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-door">
+          <video poster="" id="door" autoplay controls muted loop height="100%">
+            <source src="data/door_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shelf">
+          <video poster="" id="shelf" autoplay controls muted loop height="100%">
+            <source src="data/shelf_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cat">
+          <video poster="" id="cat" autoplay controls muted loop height="100%">
+            <source src="data/cat_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-dog">
+          <video poster="" id="dog" autoplay controls muted loop height="100%">
+            <source src="data/dog_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <p>
+            Video comparisons between SOTA per-frame processing algorithm and the proposed depth video super-resolution (DVSR) & histogram video super-resolution (HVSR) solutions. 
+          DVSR improves depth prediction accuracies and temporal stabilities over baseline, while HVSR further improves fine details.
+          </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2 class="title is-5"> &nbsp </h2>
+    <h2 class="title is-5"> &nbsp </h2>
+  </div>
+
+  <div class="container">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Direct time-of-flight (dToF) sensors are promising for next-generation on-device 3D sensing. However, to achieve the sufficient signal-to-noise-ratio (SNR) in a compact module, the dToF data has limited spatial resolution (e.g., ~20x30 for iPhone dToF), and it requires a super-resolution step before being passed to downstream tasks. In this paper, we solve this super-resolution problem by fusing the low-resolution dToF data with the corresponding high-resolution RGB guidance. Unlike the conventional RGB-guided depth enhancement approaches which perform the fusion in a per-frame manner, we propose the first multi-frame fusion scheme to mitigate the spatial ambiguity resulting from the low-resolution dToF imaging. In addition, dToF sensors provide unique depth histogram information for each local patch, and we incorporate this dToF-specific feature in our network design to further alleviate spatial ambiguity. To evaluate our models on complex dynamic indoor environments and to provide a large-scale dToF sensor dataset, we introduce DyDToF, the first synthetic RGB-dToF video dataset that features dynamic objects and a realistic dToF simulator following the physical imaging process. We believe the methods and dataset are beneficial to a broad community as dToF depth sensing is becoming mainstream on mobile devices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+
+  <div class="container">
+    <h2 class="title is-5"> &nbsp </h2>
+    <h2 class="title is-5"> &nbsp </h2>
+  </div>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-soulcity">
+          <video poster="" id="data1" autoplay controls muted loop height="100%">
+            <source src="data/dataset_video1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-table">
+          <video poster="" id="data2" autoplay controls muted loop height="100%">
+            <source src="data/dataset_video2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-door">
+          <video poster="" id="data3" autoplay controls muted loop height="100%">
+            <source src="data/dataset_video3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shelf">
+          <video poster="" id="data4" autoplay controls muted loop height="100%">
+            <source src="data/dataset_video4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cat">
+          <video poster="" id="data5" autoplay controls muted loop height="100%">
+            <source src="data/dataset_video5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-dog">
+          <video poster="" id="data6" autoplay controls muted loop height="100%">
+            <source src="data/dataset_video6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <p>
+            We introduce DyDToF dataset, the first synthetic RGB-dToF dataset that features dynamic objects and realistic dToF simulator.
+          </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2 class="title is-5"> &nbsp </h2>
+    <h2 class="title is-5"> &nbsp </h2>
+  </div>
+
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-5"> We will release our code and dataset on publication. </h2>
+      </div>
+    </div>
+  </div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>@article{sun2022consistent,
+  title={Consistent Direct Time-of-Flight Video Depth Super-Resolution},
+  author={Sun, Zhanghao and Ye, Wei and Xiong, Jinhui and Choe, Gyeongmin and Wang, Jialiang and Su, Shuochen and Ranjan, Rakesh},
+  journal={arXiv preprint arXiv:2211.08658},
+  year={2022}
+}</code></pre>
+  </div>
+</section>
+ 
+ 
+ <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a href="https://drive.google.com/file/d/1P3_ZJYdp_VDuWOQaPuf_2xt0VGWCt7Jg/view?usp=sharing">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a href="https://github.com/YichengWu/freecam3d" class="external-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-2 ">
+        <div class="content">
+          <p>
+			  Web template is from <a href="https://nerfies.github.io/" style="font-size: 16px; text-decoration: none">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+</html>
