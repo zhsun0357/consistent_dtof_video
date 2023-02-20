@@ -252,6 +252,51 @@
 
   <div class="container">
     <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"> Realworld Comparisons with Apple ARKit</h2>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="title is-5"> &nbsp </h2>
+  </div>
+
+
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+      <div class="content has-text-justified">
+        <p>
+            Since Apple ARKit does not provide raw dToF data, we naively downsample the pre-processed dToF data as input to our DVSR network.
+            Our DVSR network generalizes well to this task even without finetuning. Compared to the high-resolution processing results provided by ARKit, DVSR achieves better temporal consistency and corrects errors in the ARKit preprocessed data. This further demonstrate the effectiveness of the multi-frame fusion approach.
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h2 class="title is-5"> &nbsp </h2>
+  </div>
+
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+        <div class="item item-arkit">
+          <video poster="" id="arkit" autoplay controls muted loop height="100%">
+            <source src="data/arkit_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2 class="title is-5"> &nbsp </h2>
+    <h2 class="title is-5"> &nbsp </h2>
+  </div>
+
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <h2 class="title is-5"> We will release our code and dataset on publication. </h2>
       </div>
